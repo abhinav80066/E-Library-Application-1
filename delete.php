@@ -30,7 +30,7 @@ $db = new mysqli('localhost',$user, $pass, $db) or die("unable to connect");
             echo "ERROR: Hush! Sorry $sql. " 
                 . mysqli_error($db); 
            }
-          // if successfully deleted 
+          // if successfully deleted cool
         }   
 ?>
 </html>
