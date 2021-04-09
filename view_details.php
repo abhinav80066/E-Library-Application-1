@@ -14,6 +14,7 @@
 <div class="container-fluid">
   <h2 class="display-5"> BOOK DETAILS </h2>
   <br>
+  <!-- book details -->
   <div class="row no-gutters">
     <div class ="col-12 col-md-8 order-md-first">
       <table class="table table-info table-borderless table-responsive ">
@@ -48,11 +49,13 @@
         </tr>
       </table>
     </div>
+    <!-- Cover Image -->
     <div class="col-12 col-md-4 ">
       <img  src= "<?=$result[0]->image_url;?>" alt="No Image Available"  width="100%" height="auto">
     </div>
   </div>
 </div>
+<!-- buttons -->
 <div class="button-container">
   <a class="btn btn-info btn-lg" href="<?=$result[0]->book_pdf ?>" role="button">READ BOOK</a></button>
 </div>
@@ -65,7 +68,7 @@
   </button>
 </div>
 
-<!-- Modal -->
+<!-- Modal for delete button -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">

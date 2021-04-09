@@ -5,29 +5,23 @@
 <link rel="stylesheet" type="text/css" href="view_style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
    <script src="validation.js"></script> 
-    <title>E-Library</title>
-   
+    <title>E-Library</title>  
 </head>
 <?php require 'nav_bar.php'; ?>
 <body style="background-color:#f1f1f1">
 <br>
-
+<!-- prefilled the form with old data -->
 <?php
-
 $book_id = $_GET['book_id'];
-
 try{
-
-	$pdo = new PDO('mysql:host=127.0.0.1; dbname=testdb','root', '');
+  $pdo = new PDO('mysql:host=127.0.0.1; dbname=testdb','root', '');
 }catch(PDOException $e) {
 	die($e->getMessage());
 }
-
 $statement= $pdo->prepare('select * from books where book_id =('.$book_id.')');
-if($statement->execute()){
-
-    echo " ";
-}
+/* if($statement->execute()){
+   echo " ";
+} */
 $result = $statement->fetchAll(PDO::FETCH_OBJ); 
 ?>
 

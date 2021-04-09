@@ -1,4 +1,4 @@
-
+<!-- delete a book -->
 <?php
 $user = 'root';
 $pass = '';
@@ -22,6 +22,6 @@ $db = new mysqli('localhost',$user, $pass, $db) or die("unable to connect");
             echo "ERROR: Hush! Sorry $sql. " 
                 . mysqli_error($db); 
            }
-          // if successfully deleted cool
+          // if successfully deleted 
         }   
 ?>

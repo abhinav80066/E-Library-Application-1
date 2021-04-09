@@ -10,7 +10,7 @@
       <title>E-Library</title>  
 </head>
 <div class="container-fluid">
-
+<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg py-4 navbar-light bg-light">
 <span class="navbar-brand mb-0 h1">THE LIBRARY </span>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
 <br>
 <div class="centre">
 <h2 class="display-5"> ADD A BOOK</h2>
-
+  <!-- Add book form -->
   <form name="registrationForm" action="view_addbook.php" method="post" class="needs-validation" >
     <div class="mb-3 justify-content-md-center">
       <label for="book_title" class="form-label ">Enter Book Title(<span style="color:red">*</span>)</label>

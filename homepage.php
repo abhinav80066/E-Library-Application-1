@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </head>
 <div class="container-fluid">
+<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg py-4 navbar-light bg-light">
 <span class="navbar-brand mb-0 h1"> WELCOME TO THE LIBRARY </span>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,6 +31,7 @@
 
 <body style="background-color:#f1f1f1">
 <br>
+<!-- bootstrap card -->
 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-4">
     <?php foreach($results as $result) : ?>
     <div class ="col md-3">
