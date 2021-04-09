@@ -19,9 +19,9 @@ try{
 	die($e->getMessage());
 }
 $statement= $pdo->prepare('select * from books where book_id =('.$book_id.')');
-/* if($statement->execute()){
+ if($statement->execute()){
    echo " ";
-} */
+} 
 $result = $statement->fetchAll(PDO::FETCH_OBJ); 
 ?>
 
